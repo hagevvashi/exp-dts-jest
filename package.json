@@ -1,0 +1,19 @@
+{
+  "name": "exp-dts-jest",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "fix-format": "prettier --write --ignore-path .gitignore .",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "@jest/types": "^27.1.1",
+    "dts-jest": "^24.0.0",
+    "jest": "^27.2.0",
+    "prettier": "^2.4.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
