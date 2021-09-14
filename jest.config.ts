@@ -1,3 +1,4 @@
+import path from "path";
 import type { Config } from "@jest/types";
 
 const config: Config.InitialOptions = {
@@ -17,7 +18,7 @@ const config: Config.InitialOptions = {
   transformIgnorePatterns: ["<rootDir>/node_modules/"],
   globals: {
     _dts_jest_: {
-      compiler_options: "./tsconfig.json",
+      compiler_options: path.resolve(__dirname, "./tsconfig.json"),
       transpile: false,
     },
   },
